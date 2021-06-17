@@ -1,0 +1,9 @@
+COMPILER=g++
+FLAGS=-Wall -pedantic -O3
+BIN=pairs
+
+all:
+	$(COMPILER) $(FLAGS) pairs.cpp -o $(BIN)
+
+clean:
+	rm $(BIN)
