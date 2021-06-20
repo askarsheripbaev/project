@@ -9,5 +9,3 @@ include(doctest.cmake)
 
 add_library(doctest::doctest ALIAS doctest)
 add_library(Catch2::Catch2 ALIAS doctest)
-add_library(cmake)
-add_library(CMAKE_CURRENT_LIST_DIR)

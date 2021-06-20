@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10.0)
-project(src CXX)
-include(${CMAKE_CURRENT_LIST_DIR}/../cmake/Tester.cmake)
-auto_tester(src pairs.cpp test.cpp)
 
-add_library(Catch2)
-add_library(cmake)
-add_library(include iostream)
+add_executable(pairs main.cpp lib.cpp)
+#target_link_libraries(pairs)
+
+add_executable(pairs_test test.cpp lib.cpp)
+target_link_libraries(pairs_test PUBLIC doctest::doctest default)
+doctest_discover_tests(pairs_test)
