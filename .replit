@@ -1,2 +1,0 @@
-language = "cpp"
-run = "ctest --build-and-test . build --build-generator "Unix Makefiles" --test-command ctest"
