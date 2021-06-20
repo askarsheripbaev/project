@@ -1,0 +1,12 @@
+D:/C++/cpp-starter-project/build/CMakeFiles/rebuild_cache.dir
+D:/C++/cpp-starter-project/build/CMakeFiles/test.dir
+D:/C++/cpp-starter-project/build/CMakeFiles/edit_cache.dir
+D:/C++/cpp-starter-project/build/external/doctest/CMakeFiles/rebuild_cache.dir
+D:/C++/cpp-starter-project/build/external/doctest/CMakeFiles/test.dir
+D:/C++/cpp-starter-project/build/external/doctest/CMakeFiles/doctest.dir
+D:/C++/cpp-starter-project/build/external/doctest/CMakeFiles/edit_cache.dir
+D:/C++/cpp-starter-project/build/src/CMakeFiles/proj_test.dir
+D:/C++/cpp-starter-project/build/src/CMakeFiles/proj.dir
+D:/C++/cpp-starter-project/build/src/CMakeFiles/rebuild_cache.dir
+D:/C++/cpp-starter-project/build/src/CMakeFiles/test.dir
+D:/C++/cpp-starter-project/build/src/CMakeFiles/edit_cache.dir

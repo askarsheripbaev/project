@@ -1,0 +1,27 @@
+[
+{
+  "directory": "D:/C++/cpp-starter-project/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe -I../external/doctest -g -std=gnu++17 -o external\\doctest\\CMakeFiles\\doctest.dir\\doctest.cpp.obj -c D:\\C++\\cpp-starter-project\\external\\doctest\\doctest.cpp",
+  "file": "D:/C++/cpp-starter-project/external/doctest/doctest.cpp"
+},
+{
+  "directory": "D:/C++/cpp-starter-project/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe -I../external/doctest -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src\\CMakeFiles\\proj_test.dir\\test.cpp.obj -c D:\\C++\\cpp-starter-project\\src\\test.cpp",
+  "file": "D:/C++/cpp-starter-project/src/test.cpp"
+},
+{
+  "directory": "D:/C++/cpp-starter-project/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe -I../external/doctest -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src\\CMakeFiles\\proj_test.dir\\lib.cpp.obj -c D:\\C++\\cpp-starter-project\\src\\lib.cpp",
+  "file": "D:/C++/cpp-starter-project/src/lib.cpp"
+},
+{
+  "directory": "D:/C++/cpp-starter-project/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe -I../external/doctest -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src\\CMakeFiles\\proj.dir\\main.cpp.obj -c D:\\C++\\cpp-starter-project\\src\\main.cpp",
+  "file": "D:/C++/cpp-starter-project/src/main.cpp"
+},
+{
+  "directory": "D:/C++/cpp-starter-project/build",
+  "command": "C:\\ProgramData\\chocolatey\\bin\\g++.exe -I../external/doctest -g -Wall -Wextra -Wshadow -Wnon-virtual-dtor -Wold-style-cast -Wcast-align -Wunused -Woverloaded-virtual -Wpedantic -Wconversion -Wsign-conversion -Wnull-dereference -Wdouble-promotion -Wformat=2 -Wmisleading-indentation -Wduplicated-cond -Wduplicated-branches -Wlogical-op -Wuseless-cast -std=gnu++17 -o src\\CMakeFiles\\proj.dir\\lib.cpp.obj -c D:\\C++\\cpp-starter-project\\src\\lib.cpp",
+  "file": "D:/C++/cpp-starter-project/src/lib.cpp"
+}
+]
