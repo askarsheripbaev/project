@@ -6,11 +6,14 @@
 
 using namespace std;
 
-// конструктор игры
+  /** 
+   *конструктор игры
+   *\param images строка с изображениями
+   **/
 PairsGame::PairsGame(int n, string images) {
     this->n = n;
     this->images = images;
-    this->field = new Cell*[n]; // выделяем память под поле
+    this->field = new Cell*[n];       // выделяем память под поле
 
     for (int i = 0; i < n; i++) {
         this->field[i] = new Cell[n]; // выделяем память под элементы
@@ -29,12 +32,16 @@ void PairsGame::ShuffleImages() {
     }
 }
 
-// перезапуск игры
+/**
+ *
+ *\param RestartGame перезапуск игры
+ *\param ShuffleImages перемешиваем изображения
+ **/
 void PairsGame::RestartGame() {
-    ShuffleImages(); // перемешиваем изображения
+    ShuffleImages(); 
 
     for (int i = 0; i < n; i++) {
-        field[i] = new Cell[n]; // выделяем память под элементы
+        field[i] = new Cell[n];         // выделяем память под элементы
 
         for (int j = 0; j < n; j++) {
             field[i][j].image = images[i * n + j];
@@ -53,11 +60,11 @@ void PairsGame::PrintLine() const {
     cout << endl;
 }
 
-// вывод времени
+  //вывод времени
 void PairsGame::PrintTime(int time) const {
-    int hours = time / 3600; // часы
-    int minutes = (time / 60) % 60; // минуты
-    int seconds = time % 60; // секунды
+    int hours = time / 3600;            // часы
+    int minutes = (time / 60) % 60;     // минуты
+    int seconds = time % 60;            // секунды
 
     cout << "Ellapsed time: ";
     cout << setfill('0') << hours << ":" << setw(2) << minutes << ":" << setw(2) << seconds << setfill(' ') << endl;
@@ -75,16 +82,20 @@ void PairsGame::Print(bool ignoreFlags) const {
                 cout << " " << field[i][j].image << " |"; // выводим элементы матрицы
             }
             else {
-                cout << " ?" << " |"; // выводим элементы матрицы
+                cout << " ?" << " |";                     // выводим элементы матрицы
             }
         }
 
         cout << endl; // переходим на новую строку
-        PrintLine(); // выводим линию
+        PrintLine();  // выводим линию
     }
 }
-
-// считывание координат
+    /**
+     * Считывание координат
+     * \param message, откуда считываются координаты
+     * \param exclude точка исключения
+     * \return считанную точку
+     * */
 Point PairsGame::ReadPoint(const string& message, Point exclude) const {
     Point point;
     cout << message;
@@ -97,30 +108,33 @@ Point PairsGame::ReadPoint(const string& message, Point exclude) const {
 
     return point; // возвраащем координаты
 }
-
-// пометка ячейки
+    /**
+     * пометка ячейки
+     *\param point точка для отметки
+     *\param isFind было ли оно уже найдено
+     **/
 void PairsGame::MarkCell(Point point, bool isFind) {
     field[point.y - 1][point.x - 1].isFind = isFind;
 }
 
 // игра
 void PairsGame::Play() {
-    RestartGame(); // перезапускаем игру
+    RestartGame();       // перезапускаем игру
     cout << "Remeber pairs!" << endl;
-    Print(true); // выводим карточки
-    system("pause"); // задерживаем экран
+    Print(true);         // выводим карточки
+    system("pause");     // задерживаем экран
 
-    int findCount = 0; // количество найденных пар
+    int findCount = 0;   // количество найденных пар
     int totalPairs = n*n / 2; // общее количество пар
 
     clock_t t0 = clock(); // начинаем замер времени
 
     while (findCount < totalPairs) {
         system("cls"); // очищаем экран
-        Print(); // выводим поле
+        Print();       // выводим поле
 
         Point p1 = ReadPoint("Enter coordinate of first cell: ", { 0, 0 }); // считываем координаты первой клетки
-        Point p2 = ReadPoint("Enter coordinate of second cell: ", p1); // считываем координаты второй клетки
+        Point p2 = ReadPoint("Enter coordinate of second cell: ", p1);      // считываем координаты второй клетки
 
         // помечаем карточки как разгаданные
         MarkCell(p1);
@@ -132,7 +146,7 @@ void PairsGame::Play() {
         }
         
         system("cls"); // очищаем экран
-        Print(); // выводим поле
+        Print();       // выводим поле
         system("pause"); // делаем паузу
 
         // снимаем пометку на карточках
@@ -140,7 +154,7 @@ void PairsGame::Play() {
         MarkCell(p2, false);
     }
 
-    clock_t t1 = clock(); // завершаем замер времени
+    clock_t t1 = clock();                  // завершаем замер времени
     PrintTime((t1 - t0) / CLOCKS_PER_SEC); // выводим затраченное время
 }
 
