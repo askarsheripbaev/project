@@ -12,8 +12,3 @@ TEST_CASE("Test"){
     int a = 2;
     REQUIRE(a == 2);
 }
-
-TEST_CASE("MultiplicationTests"){
-    int = 5;
-    REQUIRE(a == 0);
-}
