@@ -21,8 +21,7 @@ struct Point {
 };
 /**
  * пометка ячейки
- *\param ShuffleImages перемешивание изображений
- *\param RestartGame перезапуск игры
+ *
 **/
 class PairsGame {
     int n;                ///< размер поля
